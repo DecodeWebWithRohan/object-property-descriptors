@@ -1,0 +1,27 @@
+{
+  "name": "js-object-property-descriptors",
+  "version": "1.0.0",
+  "description": "JavaScript object property descriptors, served using Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Objects",
+    "Property",
+    "Descriptor",
+    "Node.js"
+  ],
+  "author": "Rohan Roy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^3.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
