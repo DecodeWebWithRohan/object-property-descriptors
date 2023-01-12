@@ -38,6 +38,8 @@ export function demoDataDescriptorEnumerable() {
 
     // Logging enumerable properties
     console.log('Object\'s enumerable keys', Object.keys(profile));
+    // Log shallow copy
+    console.log({ ...profile });
 
     Object.defineProperties(profile, {
         'name': {
