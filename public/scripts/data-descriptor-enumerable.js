@@ -36,7 +36,7 @@ export function demoDataDescriptorEnumerable() {
         Object.getOwnPropertyDescriptors(profile),
     );
 
-    // Logging enumerable propertiesproperties
+    // Logging enumerable properties
     console.log('Object\'s enumerable keys', Object.keys(profile));
 
     Object.defineProperties(profile, {
