@@ -1,5 +1,7 @@
 /**
  * Data descriptor - is a property that has a value and may or may not be writable.
+ * Accessor descriptor - is a property that has a get or a set or both.
+ *                       It cannot contain value or writable.
  * configurable - when it's false then:
  *              1) the property cannot be deleted,
  *              2) the property cannot be switched from data to accessor property and vice-versa,

@@ -1,5 +1,7 @@
 /**
  * Data descriptor - is a property that has a value and may or may not be writable.
+ * Accessor descriptor - is a property that has a get or a set or both.
+ *                       It cannot contain value or writable.
  * enumerable - when it's true then the property shows up when we try to list them.
  *            By default its false or whatever it was set earlier.
  * This can also be set for Accessor descriptor.
