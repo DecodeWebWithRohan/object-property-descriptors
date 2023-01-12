@@ -43,4 +43,19 @@ export function demoAccessorDescriptorGetter() {
     } catch (error) {
         console.error(error);
     }
+
+    // Try to mix property types
+    try {
+
+        Object.defineProperty(roomItemsMap, 'TV', {
+            set: function (value) {
+                this.value = value;
+            },
+            value: 5,
+            enumerable: true,
+            configurable: false,
+        });
+    } catch (error) {
+        console.error(error);
+    }
 }
