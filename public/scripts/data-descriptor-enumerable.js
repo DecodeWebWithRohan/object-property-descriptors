@@ -55,4 +55,6 @@ export function demoDataDescriptorEnumerable() {
     for (const key in profile) {
         console.log('Object\'s key after its altered', key);
     }
+
+    console.log(JSON.stringify(profile));
 }
