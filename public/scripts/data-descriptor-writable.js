@@ -30,7 +30,7 @@ export function demoDataDescriptorWritable() {
 
     console.log('Object defined', fruit);
     console.log(
-        'Object\'s property descriptor',
+        'Object\'s property descriptors',
         Object.getOwnPropertyDescriptors(fruit)
     );
 
