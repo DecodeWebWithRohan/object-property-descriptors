@@ -26,9 +26,6 @@ export function demoDataDescriptorValue() {
         Object.getOwnPropertyDescriptors(user),
     );
     
-    // Logging enumerable properties
-    console.log('Object\'s enumerable keys', Object.keys(user));
-    
     // Trying to assign a writable: false
     try {
         user._id = Symbol();
@@ -42,7 +39,19 @@ export function demoDataDescriptorValue() {
     } catch (error) {
         console.error(error);
     }
+    
+    // Logging enumerable properties
+    console.log('Object\'s enumerable keys', Object.keys(user));
 
+    // Change only the enumerable configuration for email
+    Object.defineProperty(user, 'email', {
+        enumerable: false,
+    });
+    
+    // Logging enumerable properties
+    console.log('Object\'s enumerable keys', Object.keys(user));
+
+    // Define an undefined property
     Object.defineProperty(user, 'password', {
         writable: true,
         enumerable: true,
