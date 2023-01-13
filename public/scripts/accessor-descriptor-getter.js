@@ -3,7 +3,6 @@
  *                       It cannot contain value or writable.
  * get - function to act as a getter function. It's called without any arguments.
  *       By default its undefined or whatever it was set earlier.
- * This can also be set for Accessor descriptor.
  */
 
 export function demoAccessorDescriptorGetter() {

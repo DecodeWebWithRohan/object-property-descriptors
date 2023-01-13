@@ -5,7 +5,6 @@
  *       argument that can used to set the property value, that's accessible
  *       using property getter.
  *       By default its undefined or whatever it was set earlier.
- * This can also be set for Accessor descriptor.
  */
 
 export function demoAccessorDescriptorSetter() {
