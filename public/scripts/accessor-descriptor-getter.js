@@ -47,8 +47,8 @@ export function demoAccessorDescriptorGetter() {
     try {
 
         Object.defineProperty(roomItemsMap, 'TV', {
-            set: function (value) {
-                this.value = value;
+            get: function () {
+                return this.value;
             },
             value: 5,
             enumerable: true,
