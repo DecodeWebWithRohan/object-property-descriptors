@@ -66,7 +66,7 @@ function UserProfile({
         },
         age: {
             get: () => Math.round(
-                (Date.now() - new Date('1965-09-23')) / (1000 * 60 * 60 * 24 * 365)
+                (Date.now() - new Date(this.dateOfBirth)) / (1000 * 60 * 60 * 24 * 365)
             ),
             enumerable: true,
         },
