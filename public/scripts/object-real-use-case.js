@@ -1,6 +1,10 @@
-
 function hashPassword(password) {
-    return btoa(password);
+    return Array.from(password).reduce(
+        (passwordHash, character) => (
+            ((passwordHash << 5) - passwordHash + character.charCodeAt(0)) | 0
+        ),
+        0,
+    );
 }
 
 function UserProfile({
