@@ -9,11 +9,11 @@ import { demoAccessorDescriptorSetter } from './accessor-descriptor-setter.js';
 import { demoObjectRealUseCase } from './object-real-use-case.js';
 
 (() => {
-    demoDataDescriptorValue();
-    demoDataDescriptorWritable();
-    demoDataDescriptorEnumerable();
-    demoDataDescriptorConfigurable();
-    demoAccessorDescriptorGetter();
-    demoAccessorDescriptorSetter();
+    // demoDataDescriptorValue();
+    // demoDataDescriptorWritable();
+    // demoDataDescriptorEnumerable();
+    // demoDataDescriptorConfigurable();
+    // demoAccessorDescriptorGetter();
+    // demoAccessorDescriptorSetter();
     demoObjectRealUseCase();
 })();
