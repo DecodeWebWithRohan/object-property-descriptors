@@ -1,3 +1,16 @@
+/**
+ * Requirements:
+ * 1. User profile constructor function
+ * 2. Properties: _id, username, email, name, password, country, dateOfBirth, age
+ * 3. Method: matchPassword
+ * 4. _id: readonly, not deleted or enumerable
+ * 5. username: readonly
+ * 6. email, country, dateOfBirth: not enumerable
+ * 7. password: cannot be stored
+ * 8. age: needs to calculated from dateOfBirth
+ * 9. username, name and age: are enumerable
+*/
+
 function hashPassword(password) {
     return Array.from(password).reduce(
         (passwordHash, character) => (
